@@ -1,23 +1,9 @@
-import cv2
 import numpy as np
 import torch
-from torch.utils.data import DataLoader, Dataset, Subset
-from torchvision.transforms import Compose, Normalize, ToTensor
-from torchvision.transforms.functional import resize
-from typing import List, Tuple, Union, Any, Dict
-from matplotlib import pyplot as plt
-from matplotlib.pyplot import Axes
-import html
-import os
-from pathlib import Path
-import json
-import pickle
-import torch
-import numpy as np
 from torch.nn import Module
 from torch import Tensor
-from typing import List, Dict, Any, Union, Tuple
 from transformers import PreTrainedModel
+from typing import List, Tuple, Union, Any, Dict
 
 
 def to_n_diagonal_matrix(matrix: Tensor, n: int):

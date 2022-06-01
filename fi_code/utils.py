@@ -10,7 +10,6 @@ from matplotlib import pyplot as plt
 from matplotlib.pyplot import Axes
 import html
 import os
-from pathlib import Path
 import json
 import pickle
 
@@ -79,6 +78,7 @@ def get_indices(dataset: Dataset, indices: List[int] = None):
 def save_image(img: np.ndarray, path: str):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     cv2.imwrite(path, img)
+
 
 def resize_img(image, target_size: Tuple[int, int] = (128, 128)):
     image_new = resize(image, list(target_size))
